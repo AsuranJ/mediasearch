@@ -20,9 +20,9 @@ COLLECTION_NAME ='channel_files' # If you going to use same database, then use d
 
 # Messages
 START_MSG = """
-**Hi, I'm Media Search bot**
+**Hi, I'm Movies Search bot**
 
-Here you can search files in inline mode. Just press follwing buttons and start searching.
+Here you can search Movies & Web Series in inline mode. Just press follwing buttons and start searching.
 """
 
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
+SHARE_BUTTON_TEXT = 'Checkout {username} for searching Movies & Web Series. A Bot by @Discovery_Updates'
