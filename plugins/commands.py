@@ -2,8 +2,7 @@ import os
 import logging
 import datetime
 from pyrogram import Client, filters
-from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from info import START_MSG, CHANNELS, ADMINS, COLLECTION_NAME
 from utils import Media, db
 
@@ -18,7 +17,7 @@ async def start(bot, message):
         InlineKeyboardButton('Go Inline', switch_inline_query=''),
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply(START_MSG, reply_markup=reply_markup)
+    await message.reply(START_MSG, reply_markup=reply_markup, disable_web_page_preview=True)
     chat_id = -1001283278354
     mention_user = message.from_user.mention
     now = datetime.datetime.now()
