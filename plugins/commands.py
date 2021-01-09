@@ -9,7 +9,7 @@ from utils import Media, db
 logger = logging.getLogger(__name__)
 
 
-@Client.on_message(filters.command('start', 'start@MVsearchBot'))
+@Client.on_message(filters.command('start'))
 async def start(bot, message):
     """Start command handler"""
     buttons = [[
