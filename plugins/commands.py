@@ -18,10 +18,10 @@ async def start(bot, message):
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply(START_MSG, reply_markup=reply_markup, disable_web_page_preview=True)
-    chat_id = -1001283278354
-    mention_user = message.from_user.mention
-    now = datetime.datetime.now()
-    await bot.send_message(chat_id, f"#PING_BOT: \n\n{mention_user} pinged to @MVsearchBot !!")
+    #chat_id = -1001283278354
+    #mention_user = message.from_user.mention
+    #now = datetime.datetime.now()
+    #await bot.send_message(chat_id, f"#PING_BOT: \n\n{mention_user} pinged to @MVsearchBot !!")
 
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
