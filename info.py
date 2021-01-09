@@ -23,11 +23,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 START_MSG = """
-**Hi, I'm Movie Search Bot.**
+Hi, I'm **Movie Search Bot**.
 
 Here you can search Movies & Web Series in inline mode. Just press following buttons and start searching.
 
-By [Discovery Projects](http://t.me/Discovery_Updates)
+A Bot By [Discovery Projects](http://t.me/Discovery_Updates).
 """
 
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching Movies & Web Series. By @Discovery_Updates '
+SHARE_BUTTON_TEXT = 'Checkout {username} for searching Movies & Web Series. \n\nBy @Discovery_Updates '
