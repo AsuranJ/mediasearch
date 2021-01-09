@@ -30,4 +30,7 @@ Here you can search Movies & Web Series in inline mode. Just press following but
 A Bot By [Discovery Projects](http://t.me/Discovery_Updates).
 """
 
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching Movies & Web Series. \n\nBy @Discovery_Updates '
+SHARE_BUTTON_TEXT = """Checkout {username} for searching Movies & Web Series. You can search Movies & Web Series in inline mode. Just press following buttons and start searching.
+
+By @Discovery_Updates
+"""
