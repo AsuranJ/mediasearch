@@ -25,4 +25,4 @@ START_MSG = """
 Here you can search Movies & Web Series in inline mode. Just press follwing buttons and start searching.
 """
 
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching Movies & Web Series. A Bot by @Discovery_Updates'
+SHARE_BUTTON_TEXT = 'Checkout {username} for searching Movies & Web Series. \n\nA Bot by @Discovery_Updates'
