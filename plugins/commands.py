@@ -1,14 +1,16 @@
 import os
 import logging
+import datetime
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 from info import START_MSG, CHANNELS, ADMINS, COLLECTION_NAME
 from utils import Media, db
 
 logger = logging.getLogger(__name__)
 
 
-@Client.on_message(filters.command('start'))
+@Client.on_message(filters.command('start', 'start@MVsearchBot'))
 async def start(bot, message):
     """Start command handler"""
     buttons = [[
@@ -17,6 +19,10 @@ async def start(bot, message):
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply(START_MSG, reply_markup=reply_markup)
+    chat_id = -1001283278354
+    mention_user = message.from_user.mention
+    now = datetime.datetime.now()
+    await bot.send_message(chat_id, f"#PING_BOT: \n\n{mention_user} pinged to @MVsearchBot !!")
 
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
