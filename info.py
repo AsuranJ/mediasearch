@@ -23,16 +23,16 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 START_MSG = """
-Hi, I'm **Movie Search Bot**.
+Hi, I'm **Asuran Serial Search Bot**.
 
-Here you can search Movies & Web Series in inline mode. Just press following buttons and start searching.
+Here you can search Movies & Tamil Serials in inline mode. Just press following buttons and start searching.
 
-A Bot By [Discovery Projects](http://t.me/Discovery_Updates).
+A Bot By [Serial.in](http://t.me/serialcoin).
 """
 
-SHARE_BUTTON_TEXT = """Checkout {username} for searching Movies & Web Series.
+SHARE_BUTTON_TEXT = """Checkout {username} for searching Movies & Tamil Serials.
 
-You can search Movies & Web Series in inline mode.
+You can search Movies & Tamil Serials in inline mode.
 
-By @Discovery_Updates
+By @SerialCoIn
 """
